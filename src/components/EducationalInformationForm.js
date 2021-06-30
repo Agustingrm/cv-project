@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const EducationalInformationForm = (props) => {
   const delEduc = props.delEduc;
-  const id = props.id;
+  const num = props.num;
   const formulary = props.formulary;
   const display = props.display;
 
@@ -36,7 +36,7 @@ const EducationalInformationForm = (props) => {
         </div>
         <button
           onClick={() => {
-            delEduc(id);
+            delEduc(num);
           }}
           className="deleteButton"
         >

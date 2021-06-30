@@ -24,25 +24,23 @@ class App extends Component {
     });
   };
 
-  onDeleteExperience = (id) => {
+  onDeleteExperience = (num) => {
     this.setState({
-      experiences: this.state.experiences.filter((i) => i !== id),
+      experiences: this.state.experiences.filter((i) => i !== num),
     });
   };
 
   onAddEducation = () => {
     this.setState({
       educations: this.state.educations.concat(this.state.countEducation),
-      countEducation: this.state.countEducation + 1,
+      countEducation: this.state.countEducation + 1
     });
-    console.log(this.state.educations);
   };
 
-  onDeleteEducation = (id) => {
+  onDeleteEducation = (num) => {
     this.setState({
-      educations: this.state.educations.filter((i) => i !== id),
+      educations: this.state.educations.filter((i) => i !== num),
     });
-    console.log(this.state.educations);
   };
 
   handlePreviewClick = () => {

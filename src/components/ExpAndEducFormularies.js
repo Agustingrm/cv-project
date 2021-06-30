@@ -19,11 +19,11 @@ const ExpAndEducFormularies = (props) => {
       <h2>Professional Experience</h2>
       <div className="separator"></div>
       <ul>
-        {experiences.map((id) => {
+        {experiences.map((num) => {
           return (
             <li>
               <PracticalExperienceForm
-                id={id}
+                num={num}
                 delExp={delExp}
                 formulary={formulary}
                 display={display}
@@ -36,11 +36,11 @@ const ExpAndEducFormularies = (props) => {
       <h2>Education</h2>
       <div className="separator"></div>
       <ul>
-        {educations.map((id) => {
+        {educations.map((num) => {
           return (
             <li>
               <EducationalInformationForm
-                id={id}
+                num={num}
                 delEduc={delEduc}
                 formulary={formulary}
                 display={display}

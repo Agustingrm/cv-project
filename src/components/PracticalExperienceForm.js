@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const PracticalExperienceForm = (props) => {
   const delExp = props.delExp;
-  const id = props.id;
+  const num = props.num;
   const formulary = props.formulary;
   const display = props.display;
 
@@ -46,7 +46,7 @@ const PracticalExperienceForm = (props) => {
         </div>
         <button
           onClick={() => {
-            delExp(id);
+            delExp(num);
           }}
           className="deleteButton"
         >
